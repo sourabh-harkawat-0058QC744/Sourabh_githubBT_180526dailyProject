@@ -7,6 +7,27 @@ packages:
   gitUrl: https://github.com/sourabh-harkawat-0058QC744
   gitUsername: sourabh-harkawat-0058QC744
   gitBranch: main
+services:
+- serviceName: project.sourabh_githubbt_180526daily.integrations:ads
+  packages:
+  - name: Sourabh_githubBT_180526dailyProject
+    version: "1.0"
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.841
+- serviceName: project.sourabh_githubbt_180526daily.integrations:json
+  packages:
+  - name: Sourabh_githubBT_180526dailyProject
+    version: "1.0"
+- serviceName: pub.json:documentToJSON
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.841
+- serviceName: pub.json:jsonToDocument
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.841
 configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
   jdbcfunc.SAPTxStore.failFastMode: false
